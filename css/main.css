@@ -1,0 +1,564 @@
+@charset "UTF-8";
+body {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("fondocontacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  font-family: monospace;
+}
+
+form {
+  width: 550px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+
+h2 {
+  color: #e58634;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.espacio-form {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+}
+
+textarea {
+  min-height: 150px;
+  max-height: 350px;
+  max-width: 300px;
+}
+
+#boton {
+  background: #e58634;
+  color: white;
+  padding: 20px;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+.ubicacion-padre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.tamaño {
+  text-align: right;
+  color: antiquewhite;
+}
+
+.ubicacion-padre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.tamaño {
+  text-align: right;
+  color: antiquewhite;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.slider ul {
+  display: flex;
+  animation: cambio 13s infinite alternate linear;
+  width: 260%;
+}
+
+.slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider img {
+  width: 90%;
+  height: 90%;
+}
+
+.nosotros-hijo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.carta-historia {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  transform: translateY(-40%) translateX(-5%);
+  font-size: 85%;
+  color: rgb(241, 119, 37);
+}
+
+.container-historia {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  top: 100px;
+  justify-content: center;
+  margin: auto;
+  z-index: 1000;
+}
+
+.container .card-historia {
+  width: 70%;
+  height: 450px;
+  overflow: hidden;
+  margin: 50px;
+  text-align: center;
+  background: #ecf0f1;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.container .card-historia:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.container .card-historia, img {
+  width: 60%;
+  height: 60%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.text-historia {
+  margin-left: 15%;
+  font-size: 3em;
+  top: 10px;
+  color: rgb(245, 236, 236);
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.p-historia {
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 4rem;
+  font-size: 0.9em;
+  text-align: justify-all;
+  color: white;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+@media only screen and (min-width: 320%) and (max-width: 768%) {
+  .slider, .slider ul, .slider img {
+    height: 100vh;
+  }
+}
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 390px;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px rgba(211, 211, 211, 0.8196078431);
+  border-radius: 15px;
+  font-family: sans-serif;
+}
+
+.titulo {
+  font-size: 30px;
+  padding: 10px 10px 0 10px;
+}
+
+.cuerpo {
+  padding: 10px;
+}
+
+.pie {
+  background: #d68b19;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.pie a {
+  text-decoration: none;
+  color: white;
+}
+
+.pie a:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  content: "";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+h2 {
+  font-size: 2.7em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(3, 1, 1, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: #432332;
+}
+
+button:hover {
+  background-color: #e1b365;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color-acento {
+  color: #e1b365;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: #e1b365;
+  font-size: 1.6em;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: #e48b69;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("fondo00.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: white;
+}
+
+#hero button {
+  font-size: 1.75em;
+}
+
+#somos-proya .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#nuestros-programas {
+  background-color: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#nuestros-programas .container {
+  padding: 150px 12px;
+}
+
+#nuestros-programas h2 {
+  margin-top: 0;
+  font-size: 3.2em;
+}
+
+#nuestros-programas p {
+  display: none;
+}
+
+#nuestros-programas .carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px 0px;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+.carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hamburguesa.png");
+}
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("lomito.png");
+}
+
+.carta:nth-child(3) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("tacos.png");
+}
+
+#caracteristicas .container {
+  text-align: center;
+  padding: 250px 12px;
+}
+
+#caracteristicas li {
+  margin: 16px 0px;
+  font-weight: bold;
+}
+
+#final {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("comeconnos.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+  color: white;
+  height: 80vh;
+}
+
+#final h2 {
+  font-size: 9vw;
+}
+
+#final button {
+  font-size: 5vw;
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+@media (min-width: 850px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+  #hero h1 {
+    font-size: 5em;
+  }
+  #somos-proya .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #somos-proya .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #somos-proya h2 {
+    margin-top: 0px;
+  }
+  #somos-proya .img-container {
+    background-image: url("comidaveloz.png");
+    background-size: cover;
+    background-position: center center;
+    height: 20rem;
+    width: 20rem;
+  }
+  #nuestros-programas .programas {
+    display: flex;
+    justify-content: center;
+  }
+  #nuestros-programas p {
+    display: block;
+    margin-bottom: 30px;
+  }
+  #nuestros-programas h2 {
+    font-size: 4em;
+  }
+  #nuestros-programas h3 {
+    margin-top: 0;
+  }
+  #nuestros-programas .carta {
+    padding: 50px;
+    background-size: 100% 150px;
+    background-repeat: no-repeat;
+    background-position-y: 0;
+    background-color: rgb(50, 50, 50);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  .carta:first-child {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("hamburguesa.png");
+  }
+  .carta:nth-child(2) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("lomito.png");
+  }
+  .carta:nth-child(3) {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("tacos.png");
+  }
+  #caracteristicas {
+    background-image: url("media/background-2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 500px) 120px;
+  }
+  #caracteristicas .container {
+    text-align: initial;
+  }
+  #caracteristicas ul {
+    margin-left: 100px;
+  }
+  #final h2 {
+    font-size: 5em;
+  }
+  #final button {
+    font-size: 2em;
+  }
+  footer .container {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+  #caracteristicas {
+    background-position-x: calc(100vw - 800px);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
